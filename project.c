@@ -77,7 +77,7 @@ void displayBooks()
         printf("Author name: %s",library[i].Author);
         printf("Genre: %s",library[i].Genre);
         printf("Page count: %d\n",library[i].pages);
-        printf("Price: %.2f\n",library[i].cost);
+        printf("Price: %.2f rupees\n",library[i].cost);
     }
 }
 void noBooks()
