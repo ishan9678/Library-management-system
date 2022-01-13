@@ -18,9 +18,10 @@ int i = 0;
 int main()
 {
     int choice;
-    menu();
     do
     {
+        putchar('\n');
+        menu();
         putchar('\n');
         puts("Enter a choice");
         scanf("%d%*c",&choice);
@@ -69,7 +70,6 @@ void addBook()
 }
 void displayBooks()
 {
-    puts("The following books are present in the library");
     for(i=0;i<count;i++)
     {
         printf("\nDetails of book %d\n",i+1);
@@ -84,4 +84,3 @@ void noBooks()
 {
     printf("Total number of books in the library are %d\n",count);
 }
-
